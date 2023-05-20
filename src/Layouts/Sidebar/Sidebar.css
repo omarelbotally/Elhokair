@@ -1,0 +1,119 @@
+.sidebar {
+  background-color: white;
+  border: solid 1px #ddd;
+  position: absolute;
+  top: 115px;
+  left: 25px;
+  width: 20%;
+  /* height: 1000px; */
+}
+
+.sidebar-head {
+  position: fixed;
+  top: 118px;
+  z-index: 1020;
+  border: solid 3px;
+  width: 20%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px !important;
+  width: 100%;
+}
+
+ul li a {
+  color: black !important;
+  padding: 0px !important;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+li {
+  padding: 5px 5px;
+}
+
+ul li p {
+  font-size: 14px;
+  margin: 0px !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: column;
+}
+
+.sidebar button {
+  padding: 0px !important;
+  border: none !important;
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .sidebar-head {
+    position: unset;
+    width: 100%;
+  }
+  .sidebar {
+    background-color: white;
+    border: none;
+    position: fixed;
+    top: 0px;
+    left: 12px;
+    width: 20%;
+    /* height: 1000px*/
+    z-index: 10000;
+  }
+
+  .sidebar-head {
+    position: unset;
+  }
+  .cus-btn {
+    background: #4574a9;
+    color: #fff;
+    position: fixed;
+    top: 230px;
+    left: 12px !important;
+    /* border-radius: -2px 0 0 11px; */
+    z-index: 100;
+    border: none;
+    font-size: 20px;
+    display: block !important;
+    z-index: 1000;
+    padding: 20px !important;
+    width: 20% !important;
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cus-btn {
+    background: #4574a9;
+    color: #fff;
+    position: fixed;
+    top: 348px;
+    left: 12px !important;
+    border-radius: -2px 0 0 11px;
+    padding: 0 50px;
+    z-index: 100;
+    border: none;
+    font-size: 28px;
+    display: block !important;
+    z-index: 1000;
+    width: 30%;
+    font-size: 18px;
+    display: none !important;
+  }
+  .sidebar {
+    background-color: white;
+    border: none;
+    position: fixed;
+    top: 0px;
+    left: 12px;
+    width: 20%;
+    /* height: 1000px*/
+    z-index: 100000000;
+  }
+  .sidebar-head {
+    position: unset;
+    width: 100%;
+  }
+}
